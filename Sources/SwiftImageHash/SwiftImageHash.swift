@@ -64,7 +64,6 @@ public struct SwiftImageHash {
         }
         return uint64ToHex(result)
     }
-
 }
 
 func hammingDistanceBetween(_ num1: UInt64, _ num2: UInt64) -> Int {
