@@ -20,7 +20,6 @@ let package = Package(
         .target(
             name: "SwiftImageHash",
             dependencies: [],
-            resources: [.process("Resources")]),
         .testTarget(
             name: "SwiftImageHashTests",
             dependencies: ["SwiftImageHash"]),
