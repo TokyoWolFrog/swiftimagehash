@@ -72,12 +72,6 @@ func createUIImageFromBuffer(_ buffer: vImage_Buffer) -> UIImage? {
     return image
 }
 
-func loadImageFromResource(named imageName: String, imagetype: String = "jpg") -> UIImage? {
-    let imagePath = Bundle.module.path(forResource: imageName, ofType: imagetype)
-    let image = UIImage(contentsOfFile: imagePath!)
-    return image
-}
-
 enum ImageSaveError: Error {
     case failedToSave
     case invalidImageData
